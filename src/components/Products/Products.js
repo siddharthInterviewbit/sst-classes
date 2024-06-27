@@ -3,6 +3,7 @@ import Effect from "../Effect/Effect";
 import React from "react";
 import { useState, useEffect } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
+import Categories from "../Categories/Categories";
 function Products() {
     // const products = [
     //       {
@@ -55,7 +56,8 @@ function Products() {
   
     return (
       <div>
-          <div><Effect /></div>
+        <div><Effect /></div>
+        <Categories/>
             {
                 products.map(function (item, index) {
                   return (<ProductCard key={index}  product={item} />)
