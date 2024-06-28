@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 function Cart() {
     let cart = useSelector((state) => {
-        return state.items;
+        return state.cart.items;
     })
     return (
         <div>
